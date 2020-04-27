@@ -1,3 +1,7 @@
+## Brainstation Remote Hackathon - Team 21 Project
+
+Our team decided to create a project to help people find easier ways to shop for their groceries in this time of lockdown and long lines at the stores.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
