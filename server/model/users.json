@@ -1,0 +1,90 @@
+[
+  {
+    "id": "26b1ca17-30f3-408a-8769-f1f722546caa",
+    "name": "jane smith",
+    "username": "jsmith92",
+    "email": "jsmith92@email.com",
+    "items": [],
+    "conversations": []
+  },
+  {
+    "id": "cd2e1cc3-0824-4658-87d1-7f122f161d9f",
+    "name": "Spartacus Rex",
+    "username": "spartacus",
+    "email": "spartacus@iam.com",
+    "items": [],
+    "conversations": []
+  },
+  {
+    "id": "347d8556-6a44-467c-95b4-e02abf1e6eb0",
+    "name": "Billy NoMates",
+    "username": "ihavenofriends",
+    "email": "billy@no.mates",
+    "items": [],
+    "conversations": []
+  },
+  {
+    "id": "f4ba195f-b4b7-41a2-86ad-6f1a6548f233",
+    "name": "fool",
+    "username": "fool",
+    "email": "a;sldkfj",
+    "items": [],
+    "conversations": []
+  },
+  {
+    "id": "eb264f8b-ac0f-4450-afc2-1cd4d91ee06e",
+    "name": "testing",
+    "username": "testing",
+    "email": "test",
+    "items": [],
+    "conversations": []
+  },
+  {
+    "id": "41294ebc-57c2-4ded-b277-cbd2a397ccd3",
+    "name": "a;lskdjf",
+    "username": "fdsa",
+    "email": "dfs",
+    "items": [],
+    "conversations": []
+  },
+  {
+    "id": "d920d7ec-01ed-4885-b1fb-e74eddc6ceb7",
+    "name": "Dracula",
+    "username": "dracula1",
+    "email": "dracula1001@blood.com",
+    "items": [],
+    "conversations": []
+  },
+  {
+    "id": "f1f3d773-285e-46ac-814d-c16fc8841e99",
+    "name": "Ginger",
+    "username": "ginger",
+    "email": "ginger@ginger.com",
+    "items": [],
+    "conversations": []
+  },
+  {
+    "id": "58267343-7ac6-4f1a-8546-055f2b73ea64",
+    "name": "bob",
+    "username": "bob",
+    "email": "bob",
+    "items": [],
+    "conversations": []
+  },
+  {
+    "id": "c0bfeeb4-dd94-474d-9093-084f0569f280",
+    "name": "newuser",
+    "username": "newuser1",
+    "email": "user@user.com",
+    "items": [],
+    "conversations": []
+  },
+  {
+    "id": "ec45364b-d193-4a3f-86d6-59661947cb0b",
+    "name": "awesome",
+    "username": "awesome",
+    "email": "awesome@great.com",
+    "items": [],
+    "conversations": []
+  }
+]

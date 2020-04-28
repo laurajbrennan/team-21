@@ -1,0 +1,72 @@
+// mixins
+
+@mixin icon {
+  float: left;
+  height: 40px;
+  width: 40px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-right: 12px;
+}
+
+.browse {
+  background-color: $background-light;
+  padding: 20px;
+  &__filter {
+    margin: 12px 0 32px 0;
+    @include lightbutton;
+    width: 100%;
+    display: flex;
+    padding: 8px 16px;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 16px;
+  }
+  &__form {
+    position: relative;
+  }
+  &__dropdown {
+    @include dropdown;
+    position: absolute;
+    top: 16px;
+    right: 20px;
+  }
+}
+
+.item {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+  border-bottom: 2px solid $primary;
+  margin-bottom: 16px;
+  &__icon--offered {
+    @include icon;
+    background-image: url("../assets/icons/offered.svg");
+  }
+  &__icon--wanted {
+    @include icon;
+    background-image: url("../assets/icons/wanted.svg");
+  }
+  &__text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+  &__type,
+  &__text {
+    @include text(16px, 16px, $black);
+  }
+  &__area {
+    @include text(16px, 16px, $medium-grey);
+    margin-bottom: 8px;
+  }
+}
+
+@include medium {
+  .browse {
+    padding: 32px;
+  }
+}

@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1aivjruutn6a",
+    "ownedBy": "user12",
+    "type": "OFFERED: ",
+    "title": "Nofrills pickup",
+    "description": "In need of help picking up my online order from Nofrills please.",
+    "area": "googlemap data here??",
+    "conversations": [
+      {
+        "id": "39997bf6-b38a-4e01-a1a9-7539efef35ff",
+        "sentBy": "user1",
+        "item": "1aivjruutn6a",
+        "timestamp": 1585264477897,
+        "itemOwner": "user12",
+        "text": "I can help! Where do you want the shopping dropped off?"
+      }
+    ]
+  }
+]

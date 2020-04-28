@@ -1,0 +1,64 @@
+.home {
+  padding: 40px 20px;
+  height: 100vh;
+  background-color: $background;
+  display: flex;
+  flex-direction: column;
+
+  &__callout {
+    padding: 16px;
+    background-color: $alabaster;
+    border-radius: 10px;
+    text-align: center;
+
+    &-text {
+      @include text(24px, 26px, $primary);
+      text-align: center;
+    }
+  }
+  &__text {
+    @include text(16px, 20px, $black);
+  }
+  &__action-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 32px;
+  }
+  &__id-container {
+    margin-top: 24px;
+  }
+  &__signup {
+    float: right;
+  }
+}
+
+@include medium {
+  .home {
+    padding: 60px 32px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 90vh;
+    &__callout {
+      width: 45%;
+      height: 35%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__explainer {
+      width: 45%;
+      float: right;
+      height: fit-content;
+    }
+    &__text {
+      margin-top: 0;
+    }
+    &__action-container {
+      width: 100%;
+      display: flex;
+      margin-top: 0;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+.menu {
+  padding: 24px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+
+  &__exit {
+    position: absolute;
+    left: 20px;
+    height: 40px;
+    width: 40px;
+
+    &-icon {
+      height: 30px;
+      width: 30px;
+      transform: rotate(45deg);
+    }
+  }
+
+  &__title {
+    @include title(30px, 30px, $secondary);
+  }
+
+  &__list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+  }
+
+  &__link {
+    @include text(20px, 28px, $secondary);
+    padding: 10px 40px;
+    border-bottom: 1px solid $secondary;
+
+    &--bold {
+      font-weight: bold;
+    }
+  }
+  &__footer {
+    position: absolute;
+    bottom: -150px;
+    margin: 0;
+    padding: 0;
+    &-text {
+      @include text(10px, 10px, $secondary);
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@include medium {
+  .menu {
+    padding: 24px 32px;
+  }
+}

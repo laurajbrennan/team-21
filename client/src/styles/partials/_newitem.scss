@@ -1,0 +1,64 @@
+.newitem {
+  background-color: $background;
+  padding: 40px 20px;
+  margin: 0;
+  &__title {
+    @include text(24px, 32px, $primary);
+  }
+  &__input {
+    margin-top: 32px;
+    &--area {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+  }
+  &__label {
+    @include text(12px, 14px, $primary);
+  }
+  &__post-title {
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+    background-color: $white;
+    padding-left: 16px;
+    border: none;
+  }
+  &__text {
+    height: 100px;
+    width: 100%;
+    border-radius: 10px;
+    background-color: $white;
+    padding: 16px;
+    border: none;
+  }
+  &__explain {
+    @include text(12px, 12px, $dark-grey);
+    margin-bottom: 16px;
+  }
+  &__area {
+    @include lightbutton;
+    width: 172px;
+    padding-left: 16px;
+    margin-bottom: 20px;
+  }
+  &__submit-button {
+    @include darkbutton;
+    width: 100%;
+    margin-top: 24px;
+    font-size: 16px;
+  }
+}
+
+.dropdown {
+  @include dropdown;
+  position: relative;
+  top: 35px;
+  left: 128px;
+}
+
+@include medium {
+  .newitem {
+    padding: 50px 32px;
+  }
+}

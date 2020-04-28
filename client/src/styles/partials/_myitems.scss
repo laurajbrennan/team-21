@@ -1,0 +1,32 @@
+.myitems {
+  background-color: $background;
+  margin: 0;
+  padding: 40px 20px;
+  height: 100vh;
+  &__link {
+    @include text(20px, 30px, $primary);
+  }
+  &__title {
+    @include text(24px, 32px, $primary);
+  }
+  &__list {
+    margin-top: 24px;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    border-top: 2px solid $primary;
+  }
+  &__item {
+    margin-bottom: 24px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid $primary;
+    display: flex;
+    align-items: center;
+  }
+}
+
+@include medium {
+  .myitems {
+    padding: 50px 32px;
+  }
+}

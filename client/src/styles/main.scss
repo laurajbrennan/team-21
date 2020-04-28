@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.8rem;
+  height: 100vh;
+  box-sizing: border-box;
+  font-family: "AvenirNextProLT";
+  a {
+    text-decoration: none !important;
+  }
+}
+
+body {
+  position: relative;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+@import "./partials/breakpoints";
+@import "./partials/colors";
+@import "./partials/typography";
+@import "./partials/buttons";
+@import "./partials/header";
+@import "./partials/home";
+@import "./partials/menu";
+@import "./partials/browse";
+@import "./partials/login";
+@import "./partials/signup";
+@import "./partials/item";
+@import "./partials/message";
+@import "./partials/myitems";
+@import "./partials/newitem";

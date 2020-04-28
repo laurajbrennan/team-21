@@ -1,0 +1,47 @@
+.an-item {
+  background-color: $background-light;
+  margin: 0;
+  padding: 40px 20px;
+  height: fit-content;
+  &__header {
+    @include text(20px, 28px, $primary);
+    display: flex;
+    align-items: center;
+  }
+  &__body {
+    padding-top: 24px;
+    @include text(16px, 26px, $black);
+  }
+  &__footer {
+    border-top: 2px solid $primary;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    &-text {
+      @include text(14px, 16px, $dark-grey);
+      margin-top: 6px;
+    }
+  }
+  &__message {
+    width: 100%;
+    @include darkbutton;
+    height: 40px;
+    width: 100%;
+    text-align: center;
+    padding-top: 4px;
+    margin-top: 24px;
+  }
+  &__login {
+    @include text(16px, 16px, $white);
+  }
+  &__messages {
+    margin-top: 24px;
+    background-color: $background-light;
+  }
+}
+
+@include medium {
+  .an-item {
+    padding: 50px 32px;
+  }
+}
