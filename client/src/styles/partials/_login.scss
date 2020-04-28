@@ -4,7 +4,7 @@
   padding: 40px 20px;
   height: 100vh;
   &__title {
-    @include light(24px, 28px, $primary);
+    @include text(24px, 28px, $primary);
   }
   &__input {
     padding-top: 32px;

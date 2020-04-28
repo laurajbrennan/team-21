@@ -1,53 +1,36 @@
 @font-face {
-  font-family: "Lobster", cursive;
-  src: url("../assets/fonts/Lobster-Regular.otf");
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 }
 
 @font-face {
-  font-family: "LobsterTwo", cursive;
-  src: url("https://fonts.googleapis.com/css?family=Lobster+Two&display=swap");
+  font-family: "MontserratSemiBold", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 }
 
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
-}
-
-@font-face {
-  font-family: "RobotoLight", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
-}
-
-@font-face {
-  font-family: "RobotoBold", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
+  font-family: "MontserratExtraBold", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
 }
 
 // Mixins for fonts
 
 @mixin title($font-size, $line-height, $color) {
-  font-family: "Lobster";
+  font-family: "MontserratSemiBold";
   font-size: $font-size;
   line-height: $line-height;
   color: $color;
 }
 
 @mixin text($font-size, $line-height, $color) {
-  font-family: "Roboto", sans-serif;
-  font-size: $font-size;
-  line-height: $line-height;
-  color: $color;
-}
-
-@mixin light($font-size, $line-height, $color) {
-  font-family: "RobotoLight", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: $font-size;
   line-height: $line-height;
   color: $color;
 }
 
 @mixin bold($font-size, $line-height, $color) {
-  font-family: "RobotoBold", sans-serif;
+  font-family: "MontserratExtraBold", sans-serif;
   font-size: $font-size;
   line-height: $line-height;
   color: $color;

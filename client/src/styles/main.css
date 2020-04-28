@@ -26,44 +26,33 @@ body {
 }
 
 @font-face {
-  font-family: "Lobster", cursive;
-  src: url("../assets/fonts/Lobster-Regular.otf");
+  font-family: "Montserrat", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 }
 
 @font-face {
-  font-family: "LobsterTwo", cursive;
-  src: url("https://fonts.googleapis.com/css?family=Lobster+Two&display=swap");
+  font-family: "MontserratSemiBold", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 }
 
 @font-face {
-  font-family: "Roboto", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap");
-}
-
-@font-face {
-  font-family: "RobotoLight", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Roboto:300&display=swap");
-}
-
-@font-face {
-  font-family: "RobotoBold", sans-serif;
-  src: url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
+  font-family: "MontserratExtraBold", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap");
 }
 
 .button-light {
-  border: 2px solid #005031;
-  border-radius: 6px;
-  background-color: #f1fffa;
-  color: #005031;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #84bde1;
   height: 50px;
   width: 45%;
   font-size: 20px;
 }
 
 .button-dark {
-  border: 2px solid #005031;
+  border: 2px solid #40449f;
   border-radius: 6px;
-  background-color: #049376;
+  background-color: #84bde1;
   color: #ffffff;
   height: 50px;
   width: 100%;
@@ -71,58 +60,79 @@ body {
 }
 
 .header {
-  background-color: #049376;
+  background-color: #ffffff;
   width: 100%;
   height: 75px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 0 20px;
+  padding: 0 100px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
 }
 
-.header__menu {
-  position: absolute;
-  left: 20px;
-  height: 40px;
-  width: 40px;
-}
-
-.header__menu-icon {
-  height: 40px;
-  width: 40px;
-}
-
-.header__text {
-  font-family: "Lobster";
+.header__logo {
+  font-family: "Montserrat", sans-serif;
   font-size: 30px;
   line-height: 30px;
-  color: #ffffff;
+  color: #84bde1;
+  font-weight: 600;
   text-align: center;
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  padding-right: 80px;
+}
+
+.header__link {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #84bde1;
+  font-weight: 600;
+}
+
+.header__link-container {
+  background-color: #ffffff;
+  height: 75px;
+  width: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #c7c7c7;
+}
+
+.header__link-text {
+  color: #000000;
+}
+
+.homepage {
+  background-color: #84bde1;
+  color: #ffffff;
+  border: none;
 }
 
 @media only screen and (min-width: 670px) {
   .header {
-    padding: 0 32px;
-  }
-  .header__menu {
-    left: 32px;
+    padding: 0 80px;
   }
 }
 
 .home {
   padding: 40px 20px;
   height: 100vh;
-  background-color: #c9f5e4;
+  background-color: #ffffff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -140,15 +150,15 @@ body {
 }
 
 .home__callout-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 26px;
-  color: #005031;
+  color: #40449f;
   text-align: center;
 }
 
 .home__text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
@@ -249,10 +259,10 @@ body {
 }
 
 .menu__title {
-  font-family: "Lobster";
+  font-family: "MontserratSemiBold";
   font-size: 30px;
   line-height: 30px;
-  color: #049376;
+  color: #84bde1;
 }
 
 .menu__list {
@@ -268,12 +278,12 @@ body {
 }
 
 .menu__link {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 28px;
-  color: #049376;
+  color: #84bde1;
   padding: 10px 40px;
-  border-bottom: 1px solid #049376;
+  border-bottom: 1px solid #84bde1;
 }
 
 .menu__link--bold {
@@ -288,10 +298,10 @@ body {
 }
 
 .menu__footer-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 10px;
   line-height: 10px;
-  color: #049376;
+  color: #84bde1;
   margin: 0;
   padding: 0;
 }
@@ -303,16 +313,15 @@ body {
 }
 
 .browse {
-  background-color: #f1fffa;
+  background-color: #ffffff;
   padding: 20px;
 }
 
 .browse__filter {
   margin: 12px 0 32px 0;
-  border: 2px solid #005031;
-  border-radius: 6px;
-  background-color: #f1fffa;
-  color: #005031;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #84bde1;
   height: 50px;
   width: 100%;
   display: -webkit-box;
@@ -360,7 +369,7 @@ body {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  border-bottom: 2px solid #005031;
+  border-bottom: 2px solid #40449f;
   margin-bottom: 16px;
 }
 
@@ -402,14 +411,14 @@ body {
 }
 
 .item__type, .item__text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #000000;
 }
 
 .item__area {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #7e7e7e;
@@ -423,17 +432,17 @@ body {
 }
 
 .login {
-  background-color: #c9f5e4;
+  background-color: #ffffff;
   margin: 0;
   padding: 40px 20px;
   height: 100vh;
 }
 
 .login__title {
-  font-family: "RobotoLight", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 28px;
-  color: #005031;
+  color: #40449f;
 }
 
 .login__input {
@@ -441,10 +450,10 @@ body {
 }
 
 .login__label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   line-height: 14px;
-  color: #005031;
+  color: #40449f;
 }
 
 .login__name, .login__username, .login__email, .login__password {
@@ -467,17 +476,17 @@ body {
 }
 
 .login__signup-link {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 22px;
-  color: #005031;
+  color: #40449f;
   width: 50%;
 }
 
 .login__submit-button {
-  border: 2px solid #005031;
+  border: 2px solid #40449f;
   border-radius: 6px;
-  background-color: #049376;
+  background-color: #84bde1;
   color: #ffffff;
   height: 50px;
   width: 50%;
@@ -491,7 +500,7 @@ body {
 }
 
 .signup {
-  background-color: #c9f5e4;
+  background-color: #ffffff;
   margin: 0;
   padding: 40px 20px;
   height: -webkit-fit-content;
@@ -500,9 +509,9 @@ body {
 }
 
 .signup__submit-button {
-  border: 2px solid #005031;
+  border: 2px solid #40449f;
   border-radius: 6px;
-  background-color: #049376;
+  background-color: #84bde1;
   color: #ffffff;
   height: 50px;
   width: 50%;
@@ -519,7 +528,7 @@ body {
 }
 
 .an-item {
-  background-color: #f1fffa;
+  background-color: #ffffff;
   margin: 0;
   padding: 40px 20px;
   height: -webkit-fit-content;
@@ -528,10 +537,10 @@ body {
 }
 
 .an-item__header {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 28px;
-  color: #005031;
+  color: #40449f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -542,14 +551,14 @@ body {
 
 .an-item__body {
   padding-top: 24px;
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 26px;
   color: #000000;
 }
 
 .an-item__footer {
-  border-top: 2px solid #005031;
+  border-top: 2px solid #40449f;
   margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -560,7 +569,7 @@ body {
 }
 
 .an-item__footer-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #545454;
@@ -569,9 +578,9 @@ body {
 
 .an-item__message {
   width: 100%;
-  border: 2px solid #005031;
+  border: 2px solid #40449f;
   border-radius: 6px;
-  background-color: #049376;
+  background-color: #84bde1;
   color: #ffffff;
   height: 50px;
   height: 40px;
@@ -582,7 +591,7 @@ body {
 }
 
 .an-item__login {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 16px;
   color: #ffffff;
@@ -590,7 +599,7 @@ body {
 
 .an-item__messages {
   margin-top: 24px;
-  background-color: #f1fffa;
+  background-color: #ffffff;
 }
 
 @media only screen and (min-width: 670px) {
@@ -605,10 +614,10 @@ body {
 }
 
 .message__label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   line-height: 14px;
-  color: #005031;
+  color: #40449f;
 }
 
 .message__text {
@@ -616,13 +625,13 @@ body {
   height: 80px;
   padding: 16px;
   border-radius: 10px;
-  border: 2px solid #005031;
+  border: 2px solid #40449f;
 }
 
 .message__submit {
-  border: 2px solid #005031;
+  border: 2px solid #40449f;
   border-radius: 6px;
-  background-color: #049376;
+  background-color: #84bde1;
   color: #ffffff;
   height: 50px;
   width: 50%;
@@ -634,7 +643,7 @@ body {
 .message__container {
   margin-top: 24px;
   padding: 12px 0;
-  border-top: 2px solid #049376;
+  border-top: 2px solid #84bde1;
 }
 
 .message__labels {
@@ -647,38 +656,38 @@ body {
 }
 
 .message__sender, .message__sent-date {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 14px;
   line-height: 16px;
   color: #545454;
 }
 
 .message__sent-text {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: #000000;
 }
 
 .myitems {
-  background-color: #c9f5e4;
+  background-color: #ffffff;
   margin: 0;
   padding: 40px 20px;
   height: 100vh;
 }
 
 .myitems__link {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 20px;
   line-height: 30px;
-  color: #005031;
+  color: #40449f;
 }
 
 .myitems__title {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 32px;
-  color: #005031;
+  color: #40449f;
 }
 
 .myitems__list {
@@ -691,13 +700,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  border-top: 2px solid #005031;
+  border-top: 2px solid #40449f;
 }
 
 .myitems__item {
   margin-bottom: 24px;
   padding-bottom: 24px;
-  border-bottom: 2px solid #005031;
+  border-bottom: 2px solid #40449f;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -713,16 +722,16 @@ body {
 }
 
 .newitem {
-  background-color: #c9f5e4;
+  background-color: #ffffff;
   padding: 40px 20px;
   margin: 0;
 }
 
 .newitem__title {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 24px;
   line-height: 32px;
-  color: #005031;
+  color: #40449f;
 }
 
 .newitem__input {
@@ -741,10 +750,10 @@ body {
 }
 
 .newitem__label {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   line-height: 14px;
-  color: #005031;
+  color: #40449f;
 }
 
 .newitem__post-title {
@@ -766,7 +775,7 @@ body {
 }
 
 .newitem__explain {
-  font-family: "Roboto", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 12px;
   line-height: 12px;
   color: #545454;
@@ -774,10 +783,9 @@ body {
 }
 
 .newitem__area {
-  border: 2px solid #005031;
-  border-radius: 6px;
-  background-color: #f1fffa;
-  color: #005031;
+  border: 1px solid #000000;
+  background-color: #ffffff;
+  color: #84bde1;
   height: 50px;
   width: 172px;
   padding-left: 16px;
@@ -785,9 +793,9 @@ body {
 }
 
 .newitem__submit-button {
-  border: 2px solid #005031;
+  border: 2px solid #40449f;
   border-radius: 6px;
-  background-color: #049376;
+  background-color: #84bde1;
   color: #ffffff;
   height: 50px;
   width: 100%;
