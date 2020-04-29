@@ -18,10 +18,10 @@ export class Home extends Component {
             </span>
           </div>
           <div className="home__action-container">
-            <Link to="/login">
+            <Link to="/new">
               <button className="home__login button-dark">GET PICKUP</button>
             </Link>
-            <Link to="/browse">
+            <Link to="/login">
               <button className="home__signup button-light">VOLUNTEER</button>
             </Link>
           </div>
@@ -68,7 +68,29 @@ export class Home extends Component {
               msallowfullscreen
             ></iframe>
             <div className="about__hero-text">
-              placeholder for text about data we've gathered.
+              <div className="about__hero-text-box">
+                <p className="about__hero-text-words">
+                  The impact of Covid-19 is unprecedented, making grocery
+                  shopping an easy errand in the old days very challenging for
+                  many, such as seniors and people with compromised immune
+                  systems. A survey conducted by Statistics Canada revealed that
+                  6 out of 10 seniors are extremely concerned about their health
+                  and therefore, reducing going to grocery stores.
+                </p>
+                <p className="about__hero-text-words">
+                  To those who are at high risk to coronavirus, going to the
+                  groceries can be tough, as well. Over eight million men and
+                  women in Canada need to feed their children, according to 2016
+                  census survey. With many of them now having to work from home,
+                  juggling with their jobs and young children under the same
+                  roof leaves them less time to shop for family essentials.
+                </p>
+              </div>
+
+              <div className="about__graph-container">
+                <div className="about__graph-healthcare"></div>
+                <div className="about__graph-over65"></div>
+              </div>
             </div>
           </div>
           <div className="about__explainer">

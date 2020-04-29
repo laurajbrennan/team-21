@@ -59,6 +59,11 @@
   &__text {
     @include text(16px, 16px, $black);
   }
+  &__title {
+    font-weight: 600;
+    color: $secondary;
+    font-size: 24px;
+  }
   &__area {
     @include text(16px, 16px, $medium-grey);
     margin-bottom: 8px;
@@ -67,6 +72,6 @@
 
 @include medium {
   .browse {
-    padding: 32px;
+    padding: 50px 80px;
   }
 }

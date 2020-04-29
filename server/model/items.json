@@ -5,7 +5,6 @@
     "type": "OFFERED: ",
     "title": "Nofrills pickup",
     "description": "In need of help picking up my online order from Nofrills please.",
-    "area": "googlemap data here??",
     "conversations": [
       {
         "id": "39997bf6-b38a-4e01-a1a9-7539efef35ff",
@@ -16,5 +15,19 @@
         "text": "I can help! Where do you want the shopping dropped off?"
       }
     ]
+  },
+  {
+    "id": "6a7bd718-16b0-42e7-b108-efd136fe51de",
+    "ownedBy": "awesome",
+    "title": "Help please",
+    "description": "I'm having trouble getting to the store, between working and looking after the kids. Any help would be appreciated!!",
+    "conversations": []
+  },
+  {
+    "id": "c0abda88-7226-459f-a8e0-7099353b871c",
+    "ownedBy": "awesome",
+    "title": "Anyone free to get my order?",
+    "description": "It's at Walmart. Thanks in advance",
+    "conversations": []
   }
 ]

@@ -23,11 +23,6 @@ export class Browse extends Component {
       return (
         <div className="item" key={item.id}>
           <Link to={`/browse/${item.id}`} id={item.id}>
-            {item.type === "OFFERED: " ? (
-              <div className="item__icon--offered"></div>
-            ) : (
-              <div className="item__icon--wanted"></div>
-            )}
             <div className="item__text">
               <div className="item__container">
                 <span className="item__title">{item.title}</span>

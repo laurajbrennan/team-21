@@ -54,16 +54,11 @@ export class Item extends Component {
         <>
           <section className="an-item" key={this.state.item.id}>
             <header className="an-item__header">
-              {this.state.item.type === "OFFERED: " ? (
-                <div className="item__icon--offered"></div>
-              ) : (
-                <div className="item__icon--wanted"></div>
-              )}
               <span>{this.state.item.title}</span>
             </header>
             <main className="an-item__body">
               <p>{this.state.item.description}</p>
-              <p>Google Map image or widget goes here?</p>
+              <p>Google Map image or widget goes here</p>
               <div className="an-item__footer">
                 <span className="an-item__footer-text"></span>
                 <span className="an-item__footer-text">Posted 2020-03-15</span>

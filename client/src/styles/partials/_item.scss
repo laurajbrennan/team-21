@@ -4,7 +4,8 @@
   padding: 40px 20px;
   height: fit-content;
   &__header {
-    @include text(20px, 28px, $primary);
+    @include text(24px, 28px, $secondary);
+    font-weight: 600;
     display: flex;
     align-items: center;
   }
@@ -33,6 +34,7 @@
   }
   &__login {
     @include text(16px, 16px, $white);
+    font-weight: 600;
   }
   &__messages {
     margin-top: 24px;
@@ -42,6 +44,6 @@
 
 @include medium {
   .an-item {
-    padding: 50px 32px;
+    padding: 80px;
   }
 }

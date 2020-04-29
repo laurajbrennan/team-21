@@ -64,7 +64,34 @@
     &-text {
       @include text(16px, 20px, $black);
       margin: 24px 0;
+      &-box {
+        display: flex;
+        justify-content: space-between;
+      }
+      &-words {
+        width: 48%;
+      }
     }
+  }
+  &__graph-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__graph-healthcare {
+    background-image: url("../assets/images/healthcare.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 500px;
+  }
+  &__graph-over65 {
+    background-image: url("../assets/images/over65.png");
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    width: 500px;
   }
   &__explainer {
     display: flex;

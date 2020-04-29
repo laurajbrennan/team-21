@@ -11,14 +11,14 @@ const router = express.Router();
 
 // get all items
 router.get("/", (req, res) => {
-  const getItems = items.map(item => {
+  const getItems = items.map((item) => {
     return {
       id: item.id,
       ownedBy: item.ownedBy,
       title: item.title,
       description: item.description,
       area: item.area,
-      conversations: item.conversations
+      conversations: item.conversations,
     };
   });
   res.json(getItems);
@@ -26,14 +26,14 @@ router.get("/", (req, res) => {
 
 // get a specific item
 router.get("/:id", (req, res) => {
-  let item = items.find(item => {
+  let item = items.find((item) => {
     return item.id === req.params.id;
   });
   if (item.id === req.params.id) {
     return res.json(item);
   } else {
     res.status(404).json({
-      error: `Item ID${req.params.id} is not found`
+      error: `Item ID${req.params.id} is not found`,
     });
   }
 });
@@ -44,9 +44,9 @@ router.post("/", (req, res) => {
     id: helper.getNewId(),
     ownedBy: req.body.ownedBy,
     title: req.body.title,
-    text: req.body.text,
+    description: req.body.description,
     area: req.body.area,
-    conversations: []
+    conversations: [],
   };
   items.push(newItem);
   helper.writeJSONFile(allItems, items);
@@ -63,11 +63,11 @@ router.put("/:id", (req, res) => {
     item: req.body.item,
     itemOwner: req.body.itemOwner,
     timestamp: timestamp,
-    text: req.body.text
+    text: req.body.text,
   };
-  const found = items.some(item => item.id === req.params.id);
+  const found = items.some((item) => item.id === req.params.id);
   if (found) {
-    items.forEach(item => {
+    items.forEach((item) => {
       if (item.id === req.params.id) {
         item.conversations.push(newMessage);
         helper.writeJSONFile(allItems, items);

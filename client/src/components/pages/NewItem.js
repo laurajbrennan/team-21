@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import MapContainer from "../Map";
 
 export class NewItem extends Component {
   state = { loading: true, user: {}, items: [], item: {} };
@@ -16,7 +17,6 @@ export class NewItem extends Component {
         ownedBy: item.ownedBy,
         title: item.title,
         description: item.description,
-        area: item.area,
       });
     };
 
@@ -26,14 +26,13 @@ export class NewItem extends Component {
         ownedBy: this.state.user.username,
         title: event.target.title.value,
         description: event.target.description.value,
-        area: event.target.area.value,
       };
       if (this.state.user.id) {
         createNewItem(item);
         document.querySelector(".newitem__form").reset();
       } else {
         return window.alert(
-          "Please log into your Waste Not account to create this new post."
+          "Please log into your account to create this new post."
         );
       }
     };
@@ -66,9 +65,7 @@ export class NewItem extends Component {
 
           <div className="newitem__input newitem__input--area">
             <h3 className="newitem__label">STORE</h3>
-            <span className="newitem__explain">
-              Google widget will go here.
-            </span>
+            <MapContainer />
           </div>
 
           <button type="submit" className="newitem__submit-button">

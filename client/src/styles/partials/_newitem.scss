@@ -19,46 +19,33 @@
   &__post-title {
     width: 100%;
     height: 50px;
-    border-radius: 10px;
     background-color: $white;
     padding-left: 16px;
-    border: none;
+    border: 1px solid $primary;
   }
   &__text {
     height: 100px;
     width: 100%;
-    border-radius: 10px;
     background-color: $white;
     padding: 16px;
-    border: none;
+    border: 1px solid $primary;
   }
   &__explain {
     @include text(12px, 12px, $dark-grey);
     margin-bottom: 16px;
   }
-  &__area {
-    @include lightbutton;
-    width: 172px;
-    padding-left: 16px;
-    margin-bottom: 20px;
-  }
+
   &__submit-button {
     @include darkbutton;
     width: 100%;
-    margin-top: 24px;
+    margin-top: 360px;
     font-size: 16px;
+    font-weight: 600;
   }
-}
-
-.dropdown {
-  @include dropdown;
-  position: relative;
-  top: 35px;
-  left: 128px;
 }
 
 @include medium {
   .newitem {
-    padding: 50px 32px;
+    padding: 80px;
   }
 }
