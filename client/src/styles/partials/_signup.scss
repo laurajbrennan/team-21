@@ -10,9 +10,14 @@
   }
 }
 
+.radio {
+  display: inline;
+  padding: 0 12px;
+}
+
 @include medium {
   .signup {
-    padding: 50px 32px;
+    padding: 50px 80px;
     &__submit-button {
       font-size: 20px;
     }

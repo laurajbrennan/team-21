@@ -7,10 +7,10 @@ import axios from "axios";
 export default function Login() {
   const { loginUser } = useContext(UserContext);
   const [toBrowse, setToBrowse] = useState(false);
-  const login = user1 => {
-    axios.get("/users").then(res => {
+  const login = (user1) => {
+    axios.get("/users").then((res) => {
       let userArray = res.data;
-      let userFound = userArray.find(user => {
+      let userFound = userArray.find((user) => {
         return user.username === user1.username;
       });
       if (userFound) {
@@ -22,10 +22,10 @@ export default function Login() {
     });
   };
 
-  const handleLogin = event => {
+  const handleLogin = (event) => {
     event.preventDefault();
     let user = {
-      username: event.target.username.value
+      username: event.target.username.value,
     };
     login(user);
     document.querySelector(".login__form").reset();
@@ -35,7 +35,7 @@ export default function Login() {
     <section className="login">
       {toBrowse ? <Redirect to="/browse" /> : null}
       <form className="login__form" action="submit" onSubmit={handleLogin}>
-        <span className="login__title">Login to your Waste Not account</span>
+        <span className="login__title">LOGIN</span>
 
         <div className="login__input">
           <h3 className="login__label">USERNAME</h3>

@@ -22,7 +22,7 @@ export default function Signup() {
     <div className="signup">
       {toBrowse ? <Redirect to="/browse" /> : null}
       <form className="signup__form" action="submit" onSubmit={newUser}>
-        <span className="login__title">Sign up for a Waste Not account</span>
+        <span className="login__title">SIGN UP FOR PIKUP</span>
         <div className="login__input">
           <h3 className="login__label">YOUR NAME</h3>
           <input
@@ -43,9 +43,13 @@ export default function Signup() {
         </div>
         <div className="login__input">
           <input type="radio" id="volunteer" name="type" value="volunteer" />
-          <label for="volunteer">Volunteer</label>
+          <label for="volunteer">
+            <h3 className="login__label radio">VOLUNTEER</h3>
+          </label>
           <input type="radio" id="customer" name="type" value="customer" />
-          <label for="customer">Customer</label>
+          <label for="customer">
+            <h3 className="login__label radio">CUSTOMER</h3>
+          </label>
         </div>
         <div className="login__input">
           <h3 className="login__label">YOUR EMAIL</h3>
@@ -62,6 +66,7 @@ export default function Signup() {
             className="login__password"
             placeholder="Must be at least 8 characters, letters and numbers"
             name="password"
+            type="password"
             required
           />
         </div>

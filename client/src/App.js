@@ -11,7 +11,7 @@ import MyItems from "./components/pages/MyItems";
 import Login from "./components/pages/Login";
 import Signup from "./components/pages/Signup";
 import NewItem from "./components/pages/NewItem";
-import About from "./components/pages/About";
+import Footer from "./components/Footer";
 import UserContextProvider from "./contexts/UserContext";
 
 class App extends Component {
@@ -24,15 +24,13 @@ class App extends Component {
               <Route path="/" exact>
                 <Header />
                 <Home />
+                <Footer />
               </Route>
 
               <Route path="/menu" exact>
                 <Menu />
               </Route>
-              <Route path="/about" exact>
-                <Header />
-                <About />
-              </Route>
+
               <Route path="/browse" exact>
                 <Header />
                 <Browse />

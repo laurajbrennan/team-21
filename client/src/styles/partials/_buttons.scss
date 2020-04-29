@@ -8,8 +8,7 @@
 }
 
 @mixin darkbutton {
-  border: 2px solid $primary;
-  border-radius: 6px;
+  border: none;
   background-color: $secondary;
   color: $white;
   height: 50px;
@@ -17,14 +16,16 @@
 
 .button-light {
   @include lightbutton;
-  width: 45%;
-  font-size: 20px;
+
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .button-dark {
   @include darkbutton;
-  width: 100%;
-  font-size: 20px;
+
+  font-size: 16px;
+  font-weight: 600;
 }
 
 @mixin dropdown {
